@@ -13,7 +13,6 @@ RU: Паттерн Строитель
 """
 
 
-from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Any
 
@@ -70,7 +69,7 @@ class ConcreteBuilder1(Builder):
         self._product = Product1()
 
     @property
-    def product(self) -> Product1:
+    def product(self) -> 'Product1':
         """
         EN: Concrete Builders are supposed to provide their own methods for
         retrieving results. That's because various types of builders may create
