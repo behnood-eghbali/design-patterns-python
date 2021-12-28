@@ -11,7 +11,6 @@ RU: Паттерн Фабричный Метод
 """
 
 
-from __future__ import annotations
 from abc import ABC, abstractmethod
 
 
@@ -88,12 +87,12 @@ class ConcreteCreator1(Creator):
     классов продуктов.
     """
 
-    def factory_method(self) -> Product:
+    def factory_method(self) -> 'Product':
         return ConcreteProduct1()
 
 
 class ConcreteCreator2(Creator):
-    def factory_method(self) -> Product:
+    def factory_method(self) -> 'Product':
         return ConcreteProduct2()
 
 
